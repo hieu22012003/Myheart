@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nhập dữ liệu Heartlove</title>
+  <link rel="icon" href="https://github.com/Panbap/anh/blob/main/icon1.png?raw=true" type="image/png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      font-weight: 600;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-size: 24px;
+      color: #555;
+      flex-direction: column;
+    }
+
+    .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid #ff7094;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1.2s linear infinite;
+      margin-bottom: 15px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loading-text::after {
+      content: '';
+      display: inline-block;
+      animation: dots 1.5s steps(3, end) infinite;
+    }
+
+    @keyframes dots {
+
+      0%,
+      20% {
+        content: '';
+      }
+
+      40% {
+        content: '.';
+      }
+
+      60% {
+        content: '..';
+      }
+
+      80%,
+      100% {
+        content: '...';
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <div id="loading-text">Loading</div>
+  </div>
+
+  <div class="container">
+    <h1>Nhập dữ liệu</h1>
+
+    <label for="messages">Messages (mỗi dòng 1 thông điệp):</label>
+    <textarea id="messages" rows="4" placeholder="Ví dụ:&#10;Anh yêu em&#10;mãi yêu em"></textarea>
+
+    <label for="images">Images (mỗi dòng 1 đường dẫn ảnh):</label>
+    <textarea id="images" rows="2" placeholder="Ví dụ: http://devpan.png"></textarea>
+
+    <label for="heartColor">Heart Color:</label>
+    <div id="colorPickerContainer">
+      <input type="color" id="heartColor" value="#ff9090" />
+      <span id="colorValue">#ff9090</span>
+    </div>
+
+    <label for="music">Chọn nhạc:</label>
+    <select id="music">
+      <option value="">-- Không chọn --</option>
+      <option value="a.mp3">Nhac nền</option>
+      <option value="s.mp3">Happy birthday</option>
+      <option value="d.mp3">Tràn Ngập bộ nhớ</option>
+      <option value="t.mp3">Thương em hơn chính mình</option>
+      <option value="c.mp3">Chạm vào mây</option>
+    </select>
+
+    <button id="createLink">Tạo link</button>
+
+    <div id="resultContainer" style="display: none;">
+      <button id="copyButton">Copy</button>
+      <input type="text" id="resultLink" readonly />
+    </div>
+
+  </div>
+  <script>
+    const _0x2f70ed=_0x57e3;!function(e,t){const n=_0x57e3,o=_0x1d5c();for(;;)try{if(239669===parseInt(n(335))/1+-parseInt(n(356))/2+-parseInt(n(328))/3*(-parseInt(n(319))/4)+parseInt(n(329))/5*(parseInt(n(352))/6)+parseInt(n(353))/7+-parseInt(n(349))/8*(parseInt(n(348))/9)+-parseInt(n(322))/10*(parseInt(n(326))/11))break;o.push(o.shift())}catch(e){o.push(o.shift())}}();const loadingText=document[_0x2f70ed(325)](_0x2f70ed(331));let dots=0;const loadingInterval=setInterval((()=>{const e=_0x2f70ed;dots=(dots+1)%4,loadingText[e(327)]=e(339)+"."[e(340)](dots)}),250);window[_0x2f70ed(351)]("load",(()=>{setTimeout((()=>{const e=_0x57e3;clearInterval(loadingInterval),document[e(325)](e(320))[e(357)][e(321)]="none",document[e(325)]("main-content")[e(357)][e(321)]=e(343)}),300)})),document[_0x2f70ed(351)](_0x2f70ed(347),(function(e){const t=_0x2f70ed;(e[t(358)]===t(330)||e[t(344)]&&e[t(323)]&&("I"===e.key||"J"===e[t(358)])||e[t(344)]&&"U"===e[t(358)])&&e.preventDefault()})),document[_0x2f70ed(351)](_0x2f70ed(333),(function(e){e[_0x2f70ed(334)]()}));const offi="panbap.github.io",current=window[_0x2f70ed(341)][_0x2f70ed(346)];function _0x1d5c(){const e=["hostname","keydown","1941480ogfpQn","8OHqHjC",'\n                    <h1 style="color:red; font-size: 28px; text-align: center; margin-top: 100px;"> 🚨 Đang mở DevTools!</h1>\n                    <h1 style="color:red; font-size: 24px; text-align: center;">Nhấn F12 để đóng.</h1>',"addEventListener","6RCvNac","2318064Xnmqgt","innerHTML","text","550480yfkTci","style","key","innerText","28SjTJnx","loading-screen","display","5572810dSmljQ","shiftKey","appendChild","getElementById","11qvEiBG","textContent","150963ThQzRg","767525dQBPFr","F12","loading-text","now","contextmenu","preventDefault","451006Hlbkng","reload","then","getTime","Loading","repeat","location","body","block","ctrlKey","hihi"];return(_0x1d5c=function(){return e})()}function _0x57e3(e,t){const n=_0x1d5c();return(_0x57e3=function(e,t){return n[e-=319]})(e,t)}current!==offi&&(document[_0x2f70ed(342)][_0x2f70ed(354)]="",warningText[_0x2f70ed(359)]=" ",warningDiv[_0x2f70ed(324)](warningText),document[_0x2f70ed(342)][_0x2f70ed(324)](warningDiv));let devtoolsDetected=!1;setInterval((()=>{const _0x355319=_0x2f70ed,_0x36ba3d=(new Date)[_0x355319(338)]();eval("debugger;");const _0x29d717=(new Date).getTime(),_0x1c93a1=_0x29d717-_0x36ba3d>100;_0x1c93a1&&!devtoolsDetected&&(devtoolsDetected=!0,document[_0x355319(342)][_0x355319(354)]=_0x355319(350)),!_0x1c93a1&&devtoolsDetected&&location[_0x355319(336)]()}),1e3),hihi=_0x2f70ed(345),fetch("./assets/input.js?v="+Date[_0x2f70ed(332)]()).then((e=>e[_0x2f70ed(355)]()))[_0x2f70ed(337)]((_0x8b3f20=>{eval(_0x8b3f20)}));
+  </script>
+</body>
+
+</html>
